@@ -1,1 +1,12 @@
-{{yield}}
+{{#if enabled}}
+  <div {{action 'toggleModal'}} class="modal-background">
+    <div class="modal-frame">
+      <div class="modal-title">
+        {{title}}
+      </div>
+      <div class="modal-body">
+        {{yield}}
+      </div>
+    </div>
+  </div>
+{{/if}}
