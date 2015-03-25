@@ -1,6 +1,7 @@
-{{#simple-modal enabled=true title="Simple Modal"}}
+{{#simple-modal enabled=false title="Simple Modal"}}
   This is our modal! Click anywhere to dismiss this notification.
 {{/simple-modal}}
 <h2 id="title">Welcome to Ember.js</h2>
+<button {{action 'openModal'}}>Open Modal Window</button>
 
 {{outlet}}
